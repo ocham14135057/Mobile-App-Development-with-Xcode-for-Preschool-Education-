@@ -314,5 +314,108 @@ $(function() {
 	
 });  
 
+****************************************************Cascading style sheet***************************************************
+body{
+	
+	background-color:white;
+}
+
+.myButtons{
+	width:300px;
+	height:100px; 
+	background-color:silver;
+	float:left;
+ 		
+}
+
+.myApple{
+	width:300;
+	height:100;
+	background-color:None;
+	float:left;
+	
+}
+p{
+	float:left;
+	float:rightwards;
+
+	
+}
+h1{
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size: 35px;
+	color: black;
+	text-align:center;
+ 
+		
+}
+h4{
+	float:left;
+    float:leftwards;
+}
+#plate{
+		float:left;	
+		float:leftwards;
+		text-align:left;
+}
+div{
+ float:left;
+float:rightwards;
+	
+	
+}
+#star1{
+	float:left;
+
+}
+#star2{
+	float:left;
+
+	
+}
+#star3{
+	float:left;
+}
+#ThumpUp{
+	width:100px; 
+	height:100px;
+	background-color:white;
+	float:left;
+    float:leftwards;
+	
+}
+#answer{
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size: 50px;
+	font-weight: bold;
+	color: red;
+}
+
+#playAgain{
+	width:100px;
+	height:100px;
+	float:left;
+    float:leftwards;
+}
+#container{
+	background-color:silver;
+}
+
+#appleForValueOne {
+	float: rightwards;
+}
+
+#appleForValueTwo {
+	float: rightwards;
+}
+
+ 
+
+h1{font-family: verdana, arial, helvetica, sans-serif; font-size: 35px; font-weight:bold; color:black;}
+#answer{font-family: verdana, arial, helvetica, sans-serif; font-size: 50px; font-weight:bold; color:red;}
+#container{background:silver;}
+#champion{background:olive;}
+#screensaver{background:teal;}
+#fail{background:aqua;}
 
  
