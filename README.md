@@ -50,15 +50,13 @@ h1{font-family: verdana, arial, helvetica, sans-serif; font-size: 35px; font-wei
 		<h1><span id="valueOne"> </span> + <span id="valueTwo"> </span> = ? <span id="answer"></span></h1>
 	</div>
 
-	<h3>Value One</h3>
 	<div id ="appleForValueOne"></div><br/>
 	
-	<h3>Value Two</h3>
-	<div id ="appleForValueTwo"></div><br/>
+	<div id ="appleForValueTwo"></div>
 	
 	<!-- A plate containing the apples-->
 	<div id="plate">
-		<h3>Answer Equals (=)</h3> 
+	
 		<img src ="Projectimage\plate_white.png" alt="Plate" width=300 height=100>
 	</div>
 </div>
@@ -95,6 +93,8 @@ h1{font-family: verdana, arial, helvetica, sans-serif; font-size: 35px; font-wei
 <script src="calculator.js"> </script> 
 </body>
 </html>
+
+
 
 *********************************************   jQUERY File  ***************************************************************
 
@@ -314,7 +314,7 @@ $(function() {
 	
 });  
 
-****************************************************Cascading style sheet***************************************************
+************************************************** Cascading style sheet(CSS) **************************************************
 body{
 	
 	background-color:white;
