@@ -96,5 +96,223 @@ h1{font-family: verdana, arial, helvetica, sans-serif; font-size: 35px; font-wei
 </body>
 </html>
 
+*********************************************   jQUERY File  ***************************************************************
+
+$(document).ready(function(){ 
+	var valueOneData = -1;
+	var valueTwoData = -1;
+	var answer = -1;
+
+function getRandomNoBetweenZeroAndFour() {
+    return Math.floor(Math.random() * (4 - 0 + 1)) + 0;
+}
+
+function updateNewQuizInformation() {
+	valueOneData = getRandomNoBetweenZeroAndFour();
+	valueTwoData = getRandomNoBetweenZeroAndFour();
+	answer = valueOneData + valueTwoData;
+	$("#valueOne").empty().append(valueOneData);
+	$("#valueTwo").empty().append(valueTwoData); 
+	$("#answer").empty().append(answer);
+	
+	// hide answer to user
+	$("#answer").hide(); 
+	
+}
+
+function moveQuizInfoToSuccessPage(){
+	$( "#valueOnePrevious" ).empty().append(valueOneData);
+	$( "#valueTwoPrevious" ).empty().append(valueTwoData); 
+	$( "#answerPrevious" ).empty().append(answer);
+	
+}
+
+function generateApplesForValueOne(numberOfApples){
+	for (i=1;i<=numberOfApples;i++){
+		$('#appleForValueOne').append('<div class="draggable ui-widget-content ui-draggable"><img id="apple'+i+'" src ="Projectimage\\apple.png" alt="Apple" width=60 height=30></div>');
+    };
+	$("#valueOneApples").empty().append(valueOneData);
+	$("#valueTwoApples").empty().append(valueTwoData);
+	$("#answerApples").empty().append(answer);
+}
+
+function generateApplesForValueTwo(numberOfApples){
+	for (i=1;i<=numberOfApples;i++){
+		$('#appleForValueTwo').append('<div class="draggable ui-widget-content ui-draggable"><img src ="Projectimage\\apple.png" alt="Apple" width=60 height=30></div>');
+    };
+	$("#valueOneApples").empty().append(valueOneData);
+	$("#valueTwoApples").empty().append(valueTwoData);
+	$("#answerApples").empty().append(answer);
+}
+
+function generateApplesForAnswer(numberOfApples){
+	for (i=1;i<=numberOfApples;i++){
+		$('#appleForValueAnswer').append('<div class="draggable ui-widget-content ui-draggable"><img src ="Projectimage\\apple.png" alt="Apple" width=60 height=30></div>');
+    };
+	$("#valueOneApples").empty().append(valueOneData);
+	$("#valueTwoApples").empty().append(valueTwoData);
+	$("#answerApples").empty().append(answer);
+}
+
+$('#retryAfterSuccess').click(function(){
+   location.reload();
+});
+
+$('#retryAfterFailure').click(function(){
+   location.reload();
+});
+
+// Make apples draggable
+$(function() {
+    $( ".draggable" ).draggable();
+});
+
+ 
+ 
+
+
+// Start new Quiz
+ updateNewQuizInformation();
+ generateApplesForValueOne(valueOneData);
+ generateApplesForValueTwo(valueTwoData);
+ generateApplesForAnswer(answer);
+
+
+    $("#Zero").click(function(e) {
+		if (answer === 0) {
+			$("#Zero").attr("href", "#success");
+		} else {
+			$("#Zero").attr("href", "#fail");
+		}
+
+		moveQuizInfoToSuccessPage();
+		// Values for next quiz
+		updateNewQuizInformation();
+    });
+
+
+    $("#One").click(function(e) {
+		if (answer === 1) {
+			$("#One").attr("href", "#success");
+		} else {
+			$("#One").attr("href", "#fail");
+		}
+
+
+		moveQuizInfoToSuccessPage();
+		// Values for next quiz
+		updateNewQuizInformation();
+    });
+
+    $("#Two").click(function(e) {
+		if (answer === 2) {
+			$("#Two").attr("href", "#success");
+		} else {
+			$("#Two").attr("href", "#fail");
+		}
+
+		moveQuizInfoToSuccessPage();
+		// Values for next quiz
+		updateNewQuizInformation();
+    });
+
+
+	$("#Three").click(function(e) {
+		if (answer === 3) {
+			$("#Three").attr("href", "#success");
+		} else {
+			$("#Three").attr("href", "#fail");
+		}
+
+
+		moveQuizInfoToSuccessPage();
+		// Values for next quiz
+		updateNewQuizInformation();
+    });
+
+    $("#Four").click(function(e) {
+		if (answer == 4) {
+			$("#Four").attr("href", "#success");
+		} else {
+			$("#Four").attr("href", "#fail");
+		}
+
+
+		moveQuizInfoToSuccessPage();
+		// Values for next quiz
+		updateNewQuizInformation();
+    });
+
+	$("#Five").click(function(e) {
+		if (answer == 5) {
+			$("#Five").attr("href", "#success");
+		} else {
+			$("#Five").attr("href", "#fail");
+		}
+
+
+		moveQuizInfoToSuccessPage();
+		// Values for next quiz
+		updateNewQuizInformation();
+    });
+
+	$("#Six").click(function(e) {
+		if (answer == 6) {
+			$("#Six").attr("href", "#success");
+		} else {
+			$("#Six").attr("href", "#fail");
+		}
+
+
+		moveQuizInfoToSuccessPage();
+		// Values for next quiz
+		updateNewQuizInformation();
+    });
+
+
+	$("#Seven").click(function(e) {
+		if (answer == 7) {
+			$("#Seven").attr("href", "#success");
+		} else {
+			$("#Seven").attr("href", "#fail");
+		}
+
+
+		moveQuizInfoToSuccessPage();
+		// Values for next quiz
+		updateNewQuizInformation();
+    });
+
+	
+	$("#Eight").click(function(e) {
+		if (answer == 8) {
+			$("#Eight").attr("href", "#success");
+		} else {
+			$("#Eight").attr("href", "#fail");
+		}
+
+
+		moveQuizInfoToSuccessPage();
+		// Values for next quiz
+		updateNewQuizInformation();
+    });
+
+	
+	$("#Nine").click(function(e) {
+		if (answer == 9) {
+			$("#Nine").attr("href", "#success");
+		} else {
+			$("#Nine").attr("href", "#fail");
+		}
+
+
+		moveQuizInfoToSuccessPage();
+		// Values for next quiz
+		updateNewQuizInformation();
+    });
+
+	
+});  
+
 
  
